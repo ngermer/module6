@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PHOTOTAGZ</title>
+
+  <link rel="stylesheet" type="text/css" href="/static/main.css" />
+  <link href='http://fonts.googleapis.com/css?family=Dosis:400,500' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body>
+  <div class="center">
+    <div class="head">
+      <div class="hmessage" id="hmessage">{% block title %}{% endblock %}</div>
+    </div>
+    <div class="menubar">
+      <a style="float:left;" href="/photo/">Home</a>
+      {% block menubar %}{% endblock %}
+    </div>
+    <div style="margin-top:177px;" class="content">
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+</body>
+</html>
+

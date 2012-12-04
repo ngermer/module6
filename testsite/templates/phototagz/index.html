@@ -1,0 +1,12 @@
+{% extends "phototagz/base.html" %}
+
+{% block title %}Tags{% endblock %}
+
+{% block content %}
+<div class='tags'>
+  {% for tag in tags %}
+  <a href='/photo/tag/{{tag.pk}}/0/'>{{tag.name}}: {{tag.count}}</a><br />
+  {% endfor %}
+</div>
+{% endblock %}
+

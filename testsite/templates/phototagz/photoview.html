@@ -1,0 +1,30 @@
+{% extends "phototagz/base.html" %}
+
+{% block title %}{{current_tag}}{% endblock %}
+
+{% block content %}
+<div class='image'>
+  <a href='{{next}}'>
+    <img src='{{image}}' />
+  </a>
+</div>
+<h1>Tags</h1>
+<div class='tags'>
+  {% for tag in tags %}
+  <a href='/photo/tag/{{tag.tag.pk}}/0/'>{{tag.tag.name}}: {{tag.tag.count}}</a><br />
+  {% endfor %}
+</div>
+{% if user.is_authenticated %}
+<h1>Add tag</h1>
+<form action=".", method="post">
+{% csrf_token %}
+<ul>
+  {{tag_form.as_ul}}
+  <li>
+    <input type=submit value="Add Tag"/>
+  </li>
+</ul>
+</form>
+{% endif %}
+{% endblock %}
+

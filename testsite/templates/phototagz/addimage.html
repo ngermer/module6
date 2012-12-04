@@ -1,0 +1,16 @@
+{% extends "phototagz/base.html" %}
+
+{% block title %}Add sum photoz{% endblock %}
+
+{% block content %}
+<form action="." method="post">
+{% csrf_token %}
+  <ul>
+    {{ form.as_ul }}
+    <li>
+      <input type=submit value="Add dat sheeettt"/>
+    </li>
+  </ul>
+</form>
+{% endblock %}
+

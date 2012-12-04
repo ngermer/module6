@@ -1,0 +1,254 @@
+body { 
+padding:0px; 
+margin:0px; 
+background-image:url("bgtile.png"); 
+background-repeat:repeat; 
+} 
+
+p { 
+padding:0 0 15px 0; 
+} 
+
+input {
+border: 0px;
+background-color: #9D1116;
+color: black;
+font-family: 'Dosis', sans-serif;
+font-size: 18px;
+font-weight: 400;
+padding: 2px 3px 3px 3px;
+margin: 0px;
+}
+  
+.center { 
+display:block; 
+width: 960px; 
+margin-left: -480px; 
+position: absolute; 
+left: 50%; 
+} 
+  
+/*header area*/
+.head { 
+background-image:url('head.png'); 
+background-repeat:no-repeat; 
+display:block; 
+height:150px; 
+width:960px; 
+position:absolute; 
+} 
+  
+.hmessage { 
+background-color:#c4151c; 
+width:auto; 
+padding:2px 7px 3px 7px; 
+margin: 0 0 15px 15px; 
+position:absolute;bottom:0; 
+font-family: 'Dosis', sans-serif; 
+font-size:26px; 
+font-weight:500; 
+}
+
+.searchlabel {
+float: right;
+background-color: #C4151C;
+padding: 2px 7px 3px 7px;
+text-decoration: none;
+color: black;
+font-family: 'Dosis', sans-serif;
+font-size: 18px;
+font-weight: 400;
+}
+
+/* article popup */
+.articlepop {
+	display:none;
+	/*display: block;*/
+	position:absolute;
+	width:300px;
+	max-height:400px;
+	top:0;left:0;
+	background-color:lightgrey;
+	padding: 0; 
+	font-family: 'Dosis', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	z-index:4; /*so it's on top of the whole thing*/
+
+	overflow:hidden; /*this is kinda temporary hopefully*/
+}
+
+.ap_imagediv {
+position: relative;
+padding: 0;
+margin: 0;
+min-height: 50px;
+max-height: 300px;
+overflow:hidden;
+}
+
+.ap_title {
+position: absolute;
+bottom: 5px;
+background-color: #C4151C;
+padding: 2px 7px 3px 7px;
+margin: 0 0 4px 0;
+left: 5px;
+max-width: 176px;
+}
+
+.ap_image {
+width: 300px;
+background-color: white;
+}
+
+.ap_summ {
+display: block;
+font-size: 14px;
+padding: 0 2px 2px 2px;
+text-align: justify;
+}
+  
+/*content pane*/
+.content { 
+background-color:#fff; 
+margin: 150px 0 0 0; 
+padding: 15px; 
+font-family: 'Dosis', sans-serif;
+font-size: 14px;
+font-weight: 400;
+height:960px;
+z-index:2;
+}
+
+div.content p {
+
+}
+
+div.tags a {
+background-color: #C4151C;
+padding: 2px 7px 3px 7px;
+text-decoration: none;
+color: black;
+font-family: 'Dosis', sans-serif;
+font-size: 18px;
+font-weight: 400;
+margin-right:5px;
+}
+
+div.tags a:hover {
+background-color: #9D1116;
+}
+
+.label { 
+background-color:#c4151c; 
+padding:2px 7px 3px 7px; 
+margin: 0 0 15px 0; 
+font-family: 'Dosis', sans-serif; 
+font-size:18px; 
+font-weight:400; 
+} 
+  
+.lbreak { 
+margin: 0 0 15px 0; 
+}
+
+/*menubar*/
+.menubar {
+display: block;
+position:absolute;
+width: 960px;
+height: 27px;
+background-color:#c4151c;
+margin: 150px 0 0 0;
+padding: 0; 
+font-family: 'Dosis', sans-serif;
+font-size: 18px;
+font-weight: 400;
+}
+
+div.menubar a {
+background-color:#c4151c; 
+padding:2px 7px 3px 7px;
+text-decoration:none;
+color:black;
+font-family: 'Dosis', sans-serif; 
+font-size:18px; 
+font-weight:400; 
+float:left;
+}
+
+div.menubar a:hover {
+background-color:#9D1116;
+}
+
+.searchpop {
+display: none;
+position: absolute;
+width: 300px;
+background-color: lightGrey;
+top: 27px;
+right: 10px;
+z-index: 3;
+}
+
+div.searchpop a {
+background-color: #CCCCCC;
+padding: 2px 7px 3px 7px;
+text-decoration: none;
+color: black;
+font-family: 'Dosis', sans-serif;
+font-size: 18px;
+font-weight: 400;
+width: 286px;
+float: left;
+}
+
+div.searchpop a:hover {
+	background-color: #C4151C;
+}
+
+/* calendar entities */
+.weekhead {
+width: 120px;
+background-color:lightGrey;
+padding: 5px;
+text-align: center;
+float:left;
+margin:1px;
+margin-bottom:6px;
+}
+
+.day {
+width: 120px;
+height: 100px;
+background-color:lightGrey;
+padding:5px;
+float:left;
+margin:1px;
+}
+
+.today {
+width: 120px;
+height: 100px;
+background-color:darkGrey;
+padding:5px;
+float:left;
+margin:1px;
+}
+
+.spacerday {
+width: 120px;
+height: 100px;
+padding:5px;
+float:left;
+margin:1px;
+}
+
+.event {
+background-color: #C4151C;
+width: 116px;
+margin-top: 2px;
+padding: 2px;
+}
+

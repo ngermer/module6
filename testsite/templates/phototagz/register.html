@@ -1,0 +1,16 @@
+{% extends "phototagz/base.html" %}
+
+{% block title %}Register a user!{% endblock %}
+
+{% block content %}
+<form action="." method="post">
+{% csrf_token %}
+  <ul>
+    {{ form.as_ul }}
+    <li>
+      <input type=submit value="REGISTER :D:D:D:D:D:D:D:D:D:D"/>
+    </li>
+  </ul>
+</form>
+{% endblock %}
+
